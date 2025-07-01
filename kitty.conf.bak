@@ -1,0 +1,26 @@
+# BEGIN_KITTY_THEME
+# Catppuccin-Mocha
+include current-theme.conf
+# END_KITTY_THEME
+
+# fonts set
+font_family      SauceCodePro Nerd Font
+bold_font        SauceCodePro Nerd Font
+italic_font      SauceCodePro Nerd Font
+bold_italic_font SauceCodePro Nerd Font
+font_size 24
+
+# window
+window_padding_width 0
+background_opacity 0.6
+background_blur 64
+hide_window_decorations        titlebar-only
+remember_window_size           yes
+
+
+
+# tab bar
+
+tab_bar_edge                top
+tab_bar_style               powerline
+tab_powerline_style         slanted
