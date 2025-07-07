@@ -1,20 +1,30 @@
+cursor_trail 3
+cursor_trail_decay 0.1 0.4
+
+cursor_trail_start_threshold 1
+
+
 # BEGIN_KITTY_THEME
-# Catppuccin-Mocha
+# Base2Tone Earth Dark
 include current-theme.conf
 # END_KITTY_THEME
 
 # fonts set
-font_family      SauceCodePro Nerd Font
-bold_font        SauceCodePro Nerd Font
-italic_font      SauceCodePro Nerd Font
-bold_italic_font SauceCodePro Nerd Font
-font_size 24
+font_family      Iosevka Nerd Font
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+font_size 20
 
 # window
-window_padding_width 0
-background_opacity 0.6
-background_blur 64
-hide_window_decorations        titlebar-only
+# 内边距
+window_padding_width 15   
+# 窗口不透明度
+background_opacity 0.6    
+# 模糊
+background_blur                64        
+# 去除标题栏
+hide_window_decorations        titlebar-yes    
 remember_window_size           yes
 
 
@@ -23,4 +33,43 @@ remember_window_size           yes
 
 tab_bar_edge                top
 tab_bar_style               powerline
+# tab_separator      "  "
+tab_title_template             "{title}"
 tab_powerline_style         slanted
+
+
+map ctrl+p nth_window -1
+
+# map ctrl+left neighboring_window left
+# map shift+left move_window right
+# map ctrl+down neighboring_window down
+# map shift+down move_window up
+
+
+# ============ 快捷键
+
+# 窗口
+# C-S-CR(d-cr)：新建窗口
+# C-S-n(d-n)：新建独立窗口
+# c-s-w(s-d-d)：关闭窗口
+# c-s-r(d-r)：调整窗口大小
+# c-s-]：下一个窗口
+# c-s-[：上一个窗口
+# c-s-f：向前移动窗口
+# c-s-b：向后移动窗口
+# ctrl+shift+`：将窗口移动至顶部
+# c-s-1~9(d-1~0)：切换第1到第9个窗口
+# c-s-f7:视觉焦点窗口
+# c-s-f8： 可视化交换窗口
+
+
+# 选项卡
+# c-s-y(d-t)：新建tab
+# c-s-q(d-w)：关闭选项卡
+# c-s-right(s-d-])：切换下一个tab
+# c-s-left(s-d-[)：切换上一个tab
+# c-s-l：切换当前tab窗口布局
+# c-s-.：向右移动tab
+# c-s-,：向左移动tab
+# c-s-a-t(s-d-i)：设置tab标题
+
