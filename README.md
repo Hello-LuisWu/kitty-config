@@ -1,6 +1,5 @@
 # kitty-config
 
-
 ### clone files
 
 ```bash
